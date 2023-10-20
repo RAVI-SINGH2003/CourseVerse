@@ -11,10 +11,10 @@ import {
 } from '@chakra-ui/react';
 import './home.css';
 import { Link } from 'react-router-dom';
-import vg from '../../assets/images/bg.png';
-import { CgGoogle, CgYoutube } from 'react-icons/cg';
-import { SiCoursera, SiUdemy } from 'react-icons/si';
-import { DiAws } from 'react-icons/di';
+import vg from '../../assets/images/front2.png';
+// import { CgGoogle, CgYoutube } from 'react-icons/cg';
+// import { SiCoursera, SiUdemy } from 'react-icons/si';
+// import { DiAws } from 'react-icons/di';
 import introVideo from '../../assets/videos/intro.mp4';
 
 const Home = () => {
@@ -30,18 +30,29 @@ const Home = () => {
         >
           <VStack
             width={'full'}
-            alignItems={['center', 'flex-end']}
+            alignItems={['center', 'flex-start']}
             spacing="8"
           >
-            <Heading children="LEARN FROM THE EXPERTS" size={'2xl'} />
+            <Heading
+              children="Learning at your Doorstep !"
+              size={'2xl'}
+              fontSize={'7xl'}
+              padding={3}
+            />
             <Text
-              fontSize={'2xl'}
+              fontSize={'3xl'}
               fontFamily="cursive"
               textAlign={['center', 'left']}
               children="Find Valuable Content At Reasonable Price"
+              padding={3}
             />
             <Link to="/courses">
-              <Button size={'lg'} colorScheme="yellow">
+              <Button
+                size={'lg'}
+                colorScheme="yellow"
+                fontSize={'3xl'}
+                padding={10}
+              >
                 Explore Now
               </Button>
             </Link>
@@ -52,11 +63,13 @@ const Home = () => {
             boxSize={'md'}
             src={vg}
             objectFit="contain"
+            width={700}
+            height={1000}
           />
         </Stack>
       </div>
 
-      <Box padding={'8'} bg="blackAlpha.800">
+      {/* <Box padding={'8'} bg="blackAlpha.800">
         <Heading
           textAlign={'center'}
           fontFamily="body"
@@ -74,9 +87,9 @@ const Home = () => {
           <SiUdemy />
           <DiAws />
         </HStack>
-      </Box>
+      </Box> */}
 
-      <div className="container2">
+      {/* <div className="container2">
         <video
           autoPlay
           loop
@@ -87,7 +100,7 @@ const Home = () => {
           disableRemotePlayback
           src={introVideo}
         ></video>
-      </div>
+      </div> */}
     </section>
   );
 };

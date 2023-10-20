@@ -7,7 +7,7 @@ import ResetPassword from './components/Auth/ResetPassword';
 import Contact from './components/Contact/Contact';
 import Courses from './components/Courses/Courses';
 import Home from './components/Home/Home';
-import Footer from './components/Layout/Footer/Footer';
+// import Footer from './components/Layout/Footer/Footer';
 import Header from './components/Layout/Header/Header';
 import Request from './components/Request/Request';
 import About from './components/About/About';
@@ -174,9 +174,8 @@ function App() {
                   isAuthenticated={isAuthenticated}
                   isAdmin={user && user.role === 'admin'}
                 >
-                <Dashboard
-                />
-               </ProtectedRoute>
+                  <Dashboard />
+                </ProtectedRoute>
               }
             />
 
@@ -218,7 +217,7 @@ function App() {
             />
           </Routes>
 
-          <Footer />
+          {/* <Footer /> */}
           <Toaster />
         </>
       )}

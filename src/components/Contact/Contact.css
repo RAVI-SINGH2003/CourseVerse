@@ -1,0 +1,6 @@
+.contact_img{
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    z-index: -100;
+}

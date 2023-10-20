@@ -1,9 +1,7 @@
 import { Box, Heading, HStack, Stack, VStack } from '@chakra-ui/react';
 import React from 'react';
-import {
-  TiSocialYoutubeCircular,
-} from 'react-icons/ti';
-import {AiFillLinkedin} from "react-icons/ai"
+import { TiSocialYoutubeCircular } from 'react-icons/ti';
+import { AiFillLinkedin } from 'react-icons/ai';
 import { DiGithub } from 'react-icons/di';
 const Footer = () => {
   return (
@@ -25,10 +23,7 @@ const Footer = () => {
           color={'white'}
           fontSize="50"
         >
-          <a
-            href="https://www.youtube.com/@humble-fool"
-            target={'blank'}
-          >
+          <a href="https://www.youtube.com/" target={'blank'}>
             <TiSocialYoutubeCircular />
           </a>
           <a

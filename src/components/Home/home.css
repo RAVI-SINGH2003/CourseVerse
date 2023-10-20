@@ -2,6 +2,21 @@
   height: 100vh;
   padding: 5rem;
   box-sizing: border-box;
+  position: relative;
+}
+.container::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../../assets//images/background2.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: -100;
+  backdrop-filter: blur(100px);
 }
 
 .vector-graphics {

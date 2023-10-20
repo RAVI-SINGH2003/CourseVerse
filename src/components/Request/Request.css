@@ -1,0 +1,6 @@
+.request_img{
+    position: absolute;
+    width:  35%;
+    top:30%;
+    z-index: -100;
+}
