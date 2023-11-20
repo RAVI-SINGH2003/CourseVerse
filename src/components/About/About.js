@@ -14,8 +14,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // import introVideo from '../../assets/videos/intro.mp4';
 // import termsAndCondition from '../../assets/docs/termsAndCondition';
-import design from '../../assets/images/about.png';
-import './About.css';
+import design from "../../assets/images/about.png"
+import "./About.css"
 
 // const Founder = () => (
 //   <Stack direction={['column', 'row']} spacing={['4', '16']} padding={'8'}>
@@ -78,7 +78,7 @@ import './About.css';
 const About = () => {
   return (
     <>
-      <img src={design} alt="img" className="about_img" />
+      <img src={design} alt="img"className='about_img' />
       <Container maxW={'container.lg'} padding="16" boxShadow={'lg'}>
         <Heading children="About Us" textAlign={['center', 'left']} />
         <Text

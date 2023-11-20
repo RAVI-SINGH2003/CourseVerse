@@ -9,12 +9,12 @@ const Footer = () => {
       <Stack direction={['column', 'row']}>
         <VStack alignItems={['center', 'flex-start']} width="full">
           <Heading children="All Rights Reserved" color={'white'} />
-          <Heading
+          {/* <Heading
             fontFamily={'body'}
             size="sm"
-            children="@Ravi Singh"
+            children="@"
             color={'yellow.400'}
-          />
+          /> */}
         </VStack>
 
         <HStack

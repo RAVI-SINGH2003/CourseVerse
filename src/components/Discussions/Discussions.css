@@ -1,0 +1,86 @@
+.discussions {
+  padding: 2rem;
+}
+
+/* ######################## discussions navigation section ########### */
+
+.discussions .navigation .inputGroup {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.discussions .navigation .inputGroup textarea {
+  padding: 1rem;
+  font-size: 1.3rem;
+  border: 1px solid;
+  border-radius: 10px;
+  outline: none;
+  width: 70%;
+  margin: 0 0 1rem 5rem;
+  display: inline-block;
+}
+
+.discussions .inputGroup span {
+  margin: 0 10px;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.discussions .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.discussions .upload-btn-wrapper .btn {
+  border: 2px solid gray;
+  color: rgb(52, 50, 50);
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.discussions .upload-btn-wrapper input[type='file'] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.discussions .navigation .buttonGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discussions .navigation .buttonGroup button,
+.discussions .navigation .buttonGroup a {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  background-color: rgb(53, 52, 52);
+  border-radius: 10px;
+  color: white;
+  margin: 0rem 0px 0 1rem;
+}
+
+/* ##########################  Trending Questions Section ####################### */
+.discussions .questionsBox {
+  padding: 2rem;
+}
+.discussions .questionsBox h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.discussions .questionsBox .questionCard {
+  padding: 1.5rem;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+}

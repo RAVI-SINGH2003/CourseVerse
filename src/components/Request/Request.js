@@ -16,7 +16,7 @@ import { courseRequest } from '../../redux/actions/otherAction.js';
 import toast from 'react-hot-toast';
 import contactImg from '../../assets/images/requestpng.png';
 import { useEffect } from 'react';
-import './Request.css';
+import "./Request.css"
 const Request = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');

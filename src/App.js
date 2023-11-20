@@ -28,6 +28,9 @@ import toast, { Toaster } from 'react-hot-toast';
 import { loadUser } from './redux/actions/userAction.js';
 import { ProtectedRoute } from 'protected-route-react';
 import Loader from './components/Layout/Loader/Loader.js';
+import Discussions from './components/Discussions/Discussions';
+import Questions from './components/Questions/Questions';
+import MyQuestions from './components/Discussions/MyQuestions.jsx';
 
 function App() {
   window.addEventListener('contextmenu', e => {
@@ -87,6 +90,7 @@ function App() {
                 </ProtectedRoute>
               }
             />
+
             <Route
               path="/changepassword"
               element={
@@ -212,6 +216,30 @@ function App() {
                   isAdmin={user && user.role === 'admin'}
                 >
                   <Users />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/discussions"
+              element={
+                <ProtectedRoute isAuthenticated={isAuthenticated}>
+                  <Discussions />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/questions/:id"
+              element={
+                <ProtectedRoute isAuthenticated={isAuthenticated}>
+                  <Questions />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/questions/me"
+              element={
+                <ProtectedRoute isAuthenticated={isAuthenticated}>
+                  <MyQuestions />
                 </ProtectedRoute>
               }
             />

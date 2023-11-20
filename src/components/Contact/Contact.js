@@ -15,8 +15,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { contactUs } from '../../redux/actions/otherAction.js';
 import { useEffect } from 'react';
 import toast from 'react-hot-toast';
-import './Contact.css';
-import contactImg from '../../assets/images/contact.png';
+import './Contact.css'
+import contactImg from "../../assets/images/contact.png"
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -36,17 +36,17 @@ const Contact = () => {
     dispatch(contactUs(name, email, message));
   };
 
-  useEffect(() => {
-    if (error) {
-      toast.error(error);
-      dispatch({ type: 'clearError' });
-    }
+    useEffect(() => {
+      if (error) {
+        toast.error(error);
+        dispatch({ type: 'clearError' });
+      }
 
-    if (stateMessage) {
-      toast.success(stateMessage);
-      dispatch({ type: 'clearMessage' });
-    }
-  }, [dispatch, error, stateMessage]);
+      if (stateMessage) {
+        toast.success(stateMessage);
+        dispatch({ type: 'clearMessage' });
+      }
+    }, [dispatch, error, stateMessage]);
 
   return (
     <>
