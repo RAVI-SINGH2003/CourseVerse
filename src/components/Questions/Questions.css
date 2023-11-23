@@ -1,5 +1,5 @@
 .questionPage {
-  height: 100vh;
+  min-height: 100vh;
 }
 .questionPage h1 {
   font-size: 1.8rem;
@@ -10,6 +10,8 @@
   border-radius: 10px;
   padding: 1rem;
   margin-bottom: 1em;
+  max-width: 100%;
+  white-space: pre-line;
 }
 .questionPage .answersBox {
   border: 2px solid black;
@@ -30,4 +32,5 @@
   margin-top: 10px;
   border-radius: 10px;
   cursor: pointer;
+  white-space: pre-line;
 }

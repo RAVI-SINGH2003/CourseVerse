@@ -19,7 +19,7 @@ const AddAnswer = ({ onClose, isOpen, id, oldAnswer }) => {
   const [uploadText, setUploadText] = useState('Upload a file');
   const dispatch = useDispatch();
   const addAnswerHandler = () => {
-    // console.log(answer);
+    console.log(answer);
     dispatch(createAnswer(answer, id));
   };
   const imageToTextConversion = async e => {
@@ -35,7 +35,7 @@ const AddAnswer = ({ onClose, isOpen, id, oldAnswer }) => {
       //   logger: info => console.log(info), // Optional logger function
       // }
     );
-    setAnswer(text.replace(/\s+/g, ' '));
+    setAnswer(text.replace(/\s+/g, ' ').trim());
     setUploadText('Upload a file');
   };
   useEffect(() => {

@@ -53,7 +53,7 @@ const Discussions = () => {
       //   logger: info => console.log(info), // Optional logger function
       // }
     );
-    setSearch(text.replace(/\s+/g, ' '));
+    setSearch(text.replace(/\s+/g, ' ').trim());
     setUploadText('Upload a file');
   };
   useEffect(() => {

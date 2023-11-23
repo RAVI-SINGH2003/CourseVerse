@@ -18,7 +18,7 @@ const AskQuestion = ({ onClose, isOpen }) => {
   const [uploadText, setUploadText] = useState('Upload a file');
   const dispatch = useDispatch();
   const askHandler = () => {
-    // console.log('question', question);
+    console.log('question', question);
     dispatch(createQuestion(question));
   };
   const imageToTextConversion = async e => {
@@ -34,7 +34,7 @@ const AskQuestion = ({ onClose, isOpen }) => {
       //   logger: info => console.log(info), // Optional logger function
       // }
     );
-    setQuestion(text.replace(/\s+/g, ' '));
+    setQuestion(text.replace(/\s+/g, ' ').trim());
     setUploadText('Upload a file');
   };
   return (
@@ -58,6 +58,7 @@ const AskQuestion = ({ onClose, isOpen }) => {
             value={question}
             onChange={e => setQuestion(e.target.value)}
             rows={10}
+            wrap={'hard'}
           />
         </ModalBody>
         <ModalFooter>
